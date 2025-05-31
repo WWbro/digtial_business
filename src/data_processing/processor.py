@@ -158,6 +158,7 @@ class DataProcessor:
             # 以避免这些已知的无效值扭曲 IQR 计算。
             if handle_outliers_quantity:
                 cleaned_df = self._handle_column_outliers(cleaned_df, 'Quantity')
+                
             
             if handle_outliers_unitprice:
                 cleaned_df = self._handle_column_outliers(cleaned_df, 'UnitPrice')
